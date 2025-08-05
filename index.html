@@ -182,6 +182,17 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
+          <li class="navbar-item">
+            <a 
+              class="navbar-link" 
+              href="./assets/Harshal-Patil_resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+            Get Resume
+            </a>
+          </li>
+          
 
         </ul>
 
@@ -801,6 +812,24 @@ high-performance rendering of complex geospatial datasets with latency under 300
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/harshalpatil7372/AI-agent">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Untitled.jpeg" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Research & Writing Automation</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
               <a href="https://github.com/harshalpatil7372/NGO-s-fundrasing-application">
 
                 <figure class="project-img">
@@ -819,7 +848,7 @@ high-performance rendering of complex geospatial datasets with latency under 300
             </li>
 
             <li class="project-item  active" data-filter-item data-category="Applications">
-              <a href="https://easymilega.com/">
+              <a href="https://play.google.com/store/apps/details?id=com.harsh5260.easymilega">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -832,24 +861,6 @@ high-performance rendering of complex geospatial datasets with latency under 300
                 <h3 class="project-title">Easy Milega Service Provider</h3>
 
                 <p class="project-category">Applications</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="Web development">
-              <a href="https://shgjalgaon.in/">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-8.jpg" alt="fundo" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">E-learning Platform</h3>
-
-                <p class="project-category">Web development</p>
 
               </a>
             </li>
@@ -907,25 +918,25 @@ high-performance rendering of complex geospatial datasets with latency under 300
 
               </a>
             </li>
-<!--
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+
+            <li class="project-item  active" data-filter-item data-category="Web development">
+              <a href="https://shgjalgaon.in/">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                  <img src="./assets/images/project-8.jpg" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Summary</h3>
+                <h3 class="project-title">E-learning Platform</h3>
 
                 <p class="project-category">Web development</p>
 
               </a>
             </li>
-
+<!--
             <li class="project-item  active" data-filter-item data-category="applications">
               <a href="#">
 
@@ -1178,30 +1189,42 @@ high-performance rendering of complex geospatial datasets with latency under 300
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6039695.989671601!2d72.2292343!3d19.6632808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d999af81a87%3A0x5cda14d5d07b6e97!2sMaharashtra!5e0!3m2!1sen!2sin!4v1691234567890!5m2!1sen!2sin"
+              width="400"
+              height="300"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </figure>
+          
         </section>
 
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form" data-form>
 
+            <!-- Required hidden fields for Netlify -->
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>Don’t fill this out: <input name="bot-field" /></label>
+            </p>
+          
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
-
+          
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
+          
+            <button class="form-btn" type="submit" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
-
+          
           </form>
 
         </section>
